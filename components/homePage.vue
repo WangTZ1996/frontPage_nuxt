@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import Swiper from "../components/swiper-container.vue"
-import Mid from "../components/mid.vue"
-import Pad from "../components/pad.vue"
+import Swiper from "./swiper-container.vue"
+import Mid from "./mid.vue"
+import Pad from "./pad.vue"
 
 export default {
   components: {
