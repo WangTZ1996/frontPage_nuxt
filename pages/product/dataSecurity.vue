@@ -1,12 +1,13 @@
 <template>
   <div class="world">
-    <P class="title">数据安全管理</P>
+    <P id="sonTitle">数据安全管理</P>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
 export default {
-  
+  scrollToTop: true
 }
 </script>
 
@@ -15,7 +16,7 @@ export default {
     min-height: 800px;
     width: 100%;
   }
-  .title{
+  #sonTitle{
     width: 100%;
     font-size: 40px;
     margin: 100px auto;
