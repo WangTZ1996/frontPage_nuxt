@@ -81,4 +81,8 @@ dist
 .idea
 
 # Service worker
-sw.*
+sw.
+
+
+DS_Store
+*/.DS_Store*
