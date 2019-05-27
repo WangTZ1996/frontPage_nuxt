@@ -1,25 +1,12 @@
 <template>
   <div class="world">
-    <P id="sonTitle">数据模型管理</P>
-    <router-view></router-view>
+    <p id="sonTitle">数据模型管理</p>
+    <nuxt-child></nuxt-child>
   </div>
 </template>
 
 <script>
 export default {
-scrollToTop: true
-}
+  scrollToTop: true
+};
 </script>
-
-<style scoped>
-  .world{
-    min-height: 800px;
-    width: 100%;
-  }
-  #sonTitle{
-    width: 100%;
-    font-size: 40px;
-    margin: 100px auto;
-    text-align: center;
-  }
-</style>

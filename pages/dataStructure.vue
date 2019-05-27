@@ -1,14 +1,8 @@
 <template>
   <div class="world">
-    <P class="title">数据架构</P>
+    <p class="title">数据架构</p>
   </div>
 </template>
-
-<script>
-export default {
-  
-}
-</script>
 
 <style scoped>
   .world{

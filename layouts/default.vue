@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import NavBlock from "./nav-block.vue"
-import FooterBlock from "./footer-block.vue"
+import NavBlock from "../components/nav-block.vue"
+import FooterBlock from "../components/footer-block.vue"
 
 export default {
   components: {
@@ -17,11 +17,3 @@ export default {
   }
 }
 </script>
-
-
-<style>
-*{
-  margin: 0;
-  padding: 0;
-}
-</style>

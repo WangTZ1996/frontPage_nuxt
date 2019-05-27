@@ -1,6 +1,6 @@
 <template>
   <div class="world">
-    <P class="title">详情</P>
+    <p class="title">详情</p>
   </div>
 </template>
 

@@ -4,7 +4,7 @@
       <span class="title">{{ dictionary[pageName] }}</span>
       <span class="bgImg"></span>
     </div>
-    <router-view></router-view>
+    <nuxt-child></nuxt-child>
   </div>
 </template>
 
@@ -41,7 +41,7 @@ export default {
 
 <style scoped>
 .world {
-  min-height: 1000px;
+  min-height: 800px;
   width: 100%;
 }
 .productMsg {

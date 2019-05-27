@@ -1,7 +1,7 @@
 <template>
   <div class="world">
-    <P id="sonTitle">数据质量管理</P>
-    <router-view></router-view>
+    <p id="sonTitle">数据质量管理</p>
+    <nuxt-child></nuxt-child>
   </div>
 </template>
 
@@ -10,16 +10,3 @@ export default {
   scrollToTop: true
 }
 </script>
-
-<style scoped>
-  .world{
-    min-height: 800px;
-    width: 100%;
-  }
-  #sonTitle{
-    width: 100%;
-    font-size: 40px;
-    margin: 100px auto;
-    text-align: center;
-  }
-</style>

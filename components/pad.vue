@@ -126,17 +126,6 @@ export default {
 
 
 <style>
-* {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-decoration: none;
-  font-family: Arial, sans-serif;
-}
-
-.center {
-  margin: 0 auto;
-}
 
 .content {
   position: relative;

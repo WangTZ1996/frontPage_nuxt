@@ -1,14 +1,8 @@
 <template>
   <div class="world">
-    <P class="title">组织架构</P>
+    <p class="title">组织架构</p>
   </div>
 </template>
-
-<script>
-export default {
-  
-}
-</script>
 
 <style scoped>
   .world{

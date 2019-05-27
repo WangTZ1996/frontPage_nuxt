@@ -1,14 +1,8 @@
 <template>
   <div class="world">
-    <P class="title">信息</P>
+    <p class="title">信息</p>
   </div>
 </template>
-
-<script>
-export default {
-  
-}
-</script>
 
 <style scoped>
   .world{
