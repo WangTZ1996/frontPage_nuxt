@@ -45,17 +45,16 @@ import img2 from "../assets/image/16.jpeg"
 import img3 from "../assets/image/17.jpeg"
 
 let swiper1 = new CreateSwiper()
-// swiper1.create();
 
 export default {
   computed: {
     img1: () => img1,
     img2: () => img2,
-    img3: () => img3
+    img3: () => img3,
   },
   mounted() {
     swiper1.create()
-  }
+  },
 }
 </script>
 

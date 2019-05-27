@@ -9,7 +9,6 @@
 </template>
 
 <script>
-
 export default {
   mounted() {
     this.pageName =
@@ -32,7 +31,7 @@ export default {
         outerData: "外部数据管理",
         dataDevelop: "数据开发平台",
         BIPlat: "BI平台",
-        product: "产品页面",
+        product: "产品页面"
       }
     };
   }

@@ -21,21 +21,21 @@
 </template>
 
 <script>
-import newsCard from "../components/newsCard.vue"
-import newsData from "../assets/data/newsData.js"
+import newsCard from "../components/newsCard.vue";
+import newsData from "../assets/data/newsData.js";
 
 export default {
   data: function() {
-    return { items: newsData.newsData }
+    return { items: newsData.newsData };
   },
   components: {
     newsCard
   }
-}
+};
 </script>
 
 <style scoped>
-li{
+li {
   list-style: none;
 }
 

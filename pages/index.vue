@@ -28,23 +28,23 @@
       </div>
     </div>
     <div class="content">
-    <p>Our Products</p>
-    <div class="box center">
-      <div class="pad">
-        <ul>
-          <li v-for="(item,index) in items" :key="item.id">
-            <productCard
-              :src="require('../assets/image/'+index+'.png')"
-              :title="item.title"
-              :text="item.text"
-              :enterURL="item.enterURL"
-              :detailURL="item.detailURL"
-            ></productCard>
-          </li>
-        </ul>
+      <p>Our Products</p>
+      <div class="box center">
+        <div class="pad">
+          <ul>
+            <li v-for="(item,index) in items" :key="item.id">
+              <productCard
+                :src="require('../assets/image/'+index+'.png')"
+                :title="item.title"
+                :text="item.text"
+                :enterURL="item.enterURL"
+                :detailURL="item.detailURL"
+              ></productCard>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
   </div>
 </template>
 
@@ -56,15 +56,15 @@ import productCard from "../components/product-card.vue";
 export default {
   components: {
     productCard,
-    Swiper,
+    Swiper
   },
   destroyed() {
     this.$destroy("Swiper");
   },
   data: function() {
     return {
-      items: data,
-    }
+      items: data
+    };
   },
 };
 </script>
@@ -169,5 +169,4 @@ export default {
 .content .box .pad li {
   display: inline-block;
 }
-
 </style>
