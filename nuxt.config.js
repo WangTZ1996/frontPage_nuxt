@@ -27,7 +27,7 @@ export default {
   ** Global CSS
   */
   css: [
-    '@/assets/css/currency.css'
+    '@/assets/css/common.css'
   ],
 
   /*
