@@ -4,7 +4,7 @@
       <span class="title">{{ dictionary[routeParams] }}</span>
       <span class="bgImg"></span>
     </div>
-    <nuxt-child></nuxt-child>
+      <nuxt-child :dictionary="dictionary" :routeParams="routeParams"></nuxt-child>
   </div>
 </template>
 
@@ -18,7 +18,6 @@ export default {
   },
   data() {
     return {
-      pageName: "product",
       dictionary: {
         resourceDirectory: "数据资源目录",
         dataModel: "数据模型管理",
