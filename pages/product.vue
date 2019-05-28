@@ -12,8 +12,8 @@
 export default {
   computed: {
     routeParams: function() {
-      return this.$route.params.product === undefined ? 
-      'product' : this.$route.params.product
+      return this.$route.params.subProduct === undefined ? 
+      'product' : this.$route.params.subProduct
     },
   },
   data() {

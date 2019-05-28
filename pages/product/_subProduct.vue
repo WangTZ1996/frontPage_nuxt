@@ -1,7 +1,7 @@
 <template>
   <div class="world">
     <p id="sonTitle">{{ dictionary[routeParams] }}</p>
-    <p class="productDetails">{{ details }}</p>
+    <nuxt-child></nuxt-child>
   </div>
 </template>
 
@@ -9,14 +9,13 @@
 export default {
   computed: {
     routeParams: function() {
-      return this.$route.params.product === undefined
+      return this.$route.params.subProduct === undefined
         ? "product"
-        : this.$route.params.product
+        : this.$route.params.subProduct
     },
   },
   data() {
     return {
-      details: "",
       dictionary: {
         resourceDirectory: "数据资源目录",
         dataModel: "数据模型管理",
@@ -33,12 +32,5 @@ export default {
       },
     }
   },
-  mounted() {
-    let n = this.$route.path.split("/").length - 1
-    this.$route.path.split("/")[n] === "details"
-      ? (this.details = "详情")
-      : (this.details = "")
-      console.log(this.$route.path.split("/"))
-  }
 }
 </script>
