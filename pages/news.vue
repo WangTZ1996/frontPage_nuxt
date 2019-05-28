@@ -31,7 +31,7 @@ export default {
   components: {
     newsCard,
   },
-};
+}
 </script>
 
 <style scoped>

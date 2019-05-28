@@ -38,6 +38,7 @@ export default {
     this.$route.path.split("/")[n] === "details"
       ? (this.details = "详情")
       : (this.details = "")
+      console.log(this.$route.path.split("/"))
   }
 }
 </script>
