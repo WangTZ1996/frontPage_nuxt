@@ -12,8 +12,7 @@
           </div>
           <div class="midright">
             <h3>先进的方法论</h3>
-            <div
-              class="midtext"
+            <div class="midtext"
             >东方金信的资深经验数据专家，设计出的数据资产管理方法论，实现数据资产管理成熟度评估，组织、制度、流程设计，帮助你全面梳理数据资产管理方案。</div>
           </div>
           <img src="../assets/image/Group8.png">
@@ -49,22 +48,22 @@
 </template>
 
 <script>
-import Swiper from "../components/swiper-container.vue";
-import data from "../assets/data/frontPageData.js";
-import productCard from "../components/product-card.vue";
+import Swiper from "../components/swiper-container.vue"
+import data from "../assets/data/frontPageData.js"
+import productCard from "../components/product-card.vue"
 
 export default {
   components: {
     productCard,
-    Swiper
+    Swiper,
   },
   destroyed() {
-    this.$destroy("Swiper");
+    this.$destroy("Swiper")
   },
   data: function() {
     return {
       items: data
-    };
+    }
   },
 };
 </script>

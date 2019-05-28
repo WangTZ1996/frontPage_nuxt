@@ -18,12 +18,11 @@
 
 <script>
 export default {
-  props: ["title", "text", "src", "enterURL", "detailURL"]
+  props: ["title", "text", "src", "enterURL", "detailURL",]
 }
 </script>
 
 <style scoped>
-
 .item {
   width: 340px;
   height: 300px;

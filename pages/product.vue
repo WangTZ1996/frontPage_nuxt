@@ -1,7 +1,7 @@
 <template>
   <div class="world">
     <div class="productMsg">
-      <span class="title">{{ dictionary[pageName] }}</span>
+      <span class="title">{{ dictionary[routeParams] }}</span>
       <span class="bgImg"></span>
     </div>
     <nuxt-child></nuxt-child>
@@ -10,11 +10,11 @@
 
 <script>
 export default {
-  mounted() {
-    this.pageName =
-      this.$route.name.split("-").length > 1
-        ? this.$route.name.split("-")[1]
-        : "product";
+  computed: {
+    routeParams: function() {
+      return this.$route.params.product === undefined ? 
+      'product' : this.$route.params.product
+    },
   },
   data() {
     return {
@@ -31,11 +31,11 @@ export default {
         outerData: "外部数据管理",
         dataDevelop: "数据开发平台",
         BIPlat: "BI平台",
-        product: "产品页面"
-      }
-    };
-  }
-};
+        product: "产品页面",
+      },
+    }
+  },
+}
 </script>
 
 <style scoped>

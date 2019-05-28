@@ -59,7 +59,6 @@ export default {
 </script>
 
 <style scoped>
-
 .head {
   position: relative;
   height: 700px;

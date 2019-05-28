@@ -10,7 +10,14 @@
   margin: 0 auto;
 }
 
-#sonTitle{
+#sonTitle {
+  width: 100%;
+  font-size: 40px;
+  margin: 100px auto;
+  text-align: center;
+}
+
+.productDetails {
   width: 100%;
   font-size: 40px;
   margin: 100px auto;

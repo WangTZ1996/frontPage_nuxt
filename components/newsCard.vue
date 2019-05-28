@@ -16,7 +16,7 @@
 
 <script>
 export default {
-  props: ["title", "author", "time", "text", "img"],
+  props: ["title", "author", "time", "text", "img",]
 }
 </script>
 

@@ -61,8 +61,8 @@ class CreateSwiper {
 				bulletActiveClass: 'paginationActive',
 			},
 		})
-		return o;
+		return o
 	}
 }
 
-export { CreateSwiper };
+export { CreateSwiper }
