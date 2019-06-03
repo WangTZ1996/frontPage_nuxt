@@ -1,7 +1,7 @@
 import pkg from './package'
 
 export default {
-  mode: 'universal',
+  mode: 'spa',
 
   /*
   ** Headers of the page
@@ -55,6 +55,7 @@ export default {
 
 
   router: {
+    base: '/samp/',
     scrollBehavior: function (to, from, savedPosition) {
       return { x: 0, y: 0 }
     }

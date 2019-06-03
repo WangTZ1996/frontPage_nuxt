@@ -7,7 +7,8 @@
     <div class="text">{{ text }}</div>
     <div class="btn">
       <div class="btnBox">
-        <nuxt-link :to="enterURL">点击进入</nuxt-link>
+        <a v-if="enterURL.startsWith('http:')" :href="enterURL" target="_blank">点击进入</a>
+        <nuxt-link v-else :to="enterURL">点击进入</nuxt-link>
       </div>
       <div class="btnBox">
         <nuxt-link :to="detailURL">查看详情</nuxt-link>

@@ -21,7 +21,7 @@ export default [
     管理和维护全部数据资产的业务、
     技术、管理等元数据进行数据的血缘分析、影响分析……`,
     title: '元数据管理',
-    enterURL: `/product-page/metaData`,
+    enterURL: 'http://10.1.1.176:10280/',
     detailURL: `/product-page/metaData/details-page`,
   },
   {
@@ -37,7 +37,7 @@ export default [
     发布和维护。支持业务和技术标准落地，
     包括数据建模、业务术语、业务编码，统计……`,
     title: '数据质量管理',
-    enterURL: `/product-page/dataQuality`,
+    enterURL: 'http://10.1.1.176:10380/',
     detailURL: `/product-page/dataQuality/details-page`,
   },
   {
