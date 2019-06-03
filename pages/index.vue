@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Swiper></Swiper>
+    <SwiperCard></SwiperCard>
     <div class="mid">
       <div class="midbox">
         <p class="center">One Data,One Team</p>
@@ -12,15 +12,15 @@
           </div>
           <div class="midright">
             <h3>先进的方法论</h3>
-            <div class="midtext"
+            <div
+              class="midtext"
             >东方金信的资深经验数据专家，设计出的数据资产管理方法论，实现数据资产管理成熟度评估，组织、制度、流程设计，帮助你全面梳理数据资产管理方案。</div>
           </div>
           <img src="../assets/image/Group8.png">
           <img src="../assets/image/Group120.png">
           <div class="midleft">
             <h3>资深的专家团队</h3>
-            <div
-              class="midtext"
+            <div class="midtext"
             >东方金信的数据资产管理专家团队，由来自Teradata、IBM、阿里的多年数据经验的专家组成，精通金融、政府、能源、制造业等多领域的数据资产管理方法。</div>
           </div>
         </div>
@@ -32,13 +32,13 @@
         <div class="pad">
           <ul>
             <li v-for="(item,index) in items" :key="item.id">
-              <productCard
+              <ProductCard
                 :src="require('../assets/image/'+index+'.png')"
                 :title="item.title"
                 :text="item.text"
                 :enterURL="item.enterURL"
                 :detailURL="item.detailURL"
-              ></productCard>
+              ></ProductCard>
             </li>
           </ul>
         </div>
@@ -48,24 +48,26 @@
 </template>
 
 <script>
-import Swiper from "../components/swiper-container.vue"
-import data from "../assets/data/frontPageData.js"
-import productCard from "../components/product-card.vue"
+import SwiperCard from "../components/swiper-container.vue";
+import data from "../assets/data/frontPageData.js";
+import ProductCard from "../components/product-card.vue";
 
 export default {
   components: {
-    productCard,
-    Swiper,
+    ProductCard,
+    SwiperCard
   },
-  destroyed() {
-    this.$destroy("Swiper")
-  },
-  data: function() {
+
+  data() {
     return {
       items: data
     }
   },
-};
+
+  destroyed() {
+    this.$destroy("SwiperCard")
+  }
+}
 </script>
 
 <style scoped>

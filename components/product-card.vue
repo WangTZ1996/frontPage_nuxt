@@ -18,7 +18,13 @@
 
 <script>
 export default {
-  props: ["title", "text", "src", "enterURL", "detailURL",]
+  props: {
+    title: String,
+    text: String,
+    src: String,
+    enterURL: String,
+    detailURL: String,
+  }
 }
 </script>
 

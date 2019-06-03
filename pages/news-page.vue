@@ -8,29 +8,24 @@
     </div>
     <ul>
       <li v-for="item in items" :key="item.id">
-        <newsCard
-          :title="item.title"
-          :author="item.author"
-          :time="item.time"
-          :text="item.text"
-          :img="item.img"
-        ></newsCard>
+        <NewsCard :title="item.title" :author="item.author" :time="item.time" :text="item.text"></NewsCard>
       </li>
     </ul>
   </div>
 </template>
 
 <script>
-import newsCard from "../components/newsCard.vue"
-import newsData from "../assets/data/newsData.js"
+import NewsCard from "../components/news-card.vue";
+import newsData from "../assets/data/newsData.js";
 
 export default {
-  data: function() {
-    return { items: newsData.newsData }
-  },
   components: {
-    newsCard,
+    NewsCard
   },
+
+  data() {
+    return { items: newsData.newsData }
+  }
 }
 </script>
 

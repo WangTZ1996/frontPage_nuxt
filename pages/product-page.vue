@@ -4,18 +4,12 @@
       <span class="title">{{ dictionary[routeParams] }}</span>
       <span class="bgImg"></span>
     </div>
-      <nuxt-child :dictionary="dictionary" :routeParams="routeParams"></nuxt-child>
+    <nuxt-child :dictionary="dictionary" :routeParams="routeParams"></nuxt-child>
   </div>
 </template>
 
 <script>
 export default {
-  computed: {
-    routeParams: function() {
-      return this.$route.params.subProduct === undefined ? 
-      'product' : this.$route.params.subProduct
-    },
-  },
   data() {
     return {
       dictionary: {
@@ -30,10 +24,18 @@ export default {
         outerData: "外部数据管理",
         dataDevelop: "数据开发平台",
         BIPlat: "BI平台",
-        product: "产品页面",
-      },
+        product: "产品页面"
+      }
     }
   },
+
+  computed: {
+    routeParams: function() {
+      return this.$route.params["subProduct"] === undefined
+        ? "product"
+        : this.$route.params["subProduct"]
+    }
+  }
 }
 </script>
 

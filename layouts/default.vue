@@ -16,21 +16,21 @@
               <nuxt-link to="/" class="link">首页</nuxt-link>
             </li>
             <li class="option">
-              <nuxt-link to="/product" class="link">产品</nuxt-link>
+              <nuxt-link to="/product-page" class="link">产品</nuxt-link>
             </li>
             <li class="option">
-              <nuxt-link to="/news" class="link">新闻</nuxt-link>
+              <nuxt-link to="/news-page" class="link">新闻</nuxt-link>
             </li>
             <li class="option">
-              <nuxt-link to="/dataStructure" class="link">数据架构</nuxt-link>
+              <nuxt-link to="/data-Structure-page" class="link">数据架构</nuxt-link>
             </li>
             <li class="option">
-              <nuxt-link to="/organization" class="link">组织架构</nuxt-link>
+              <nuxt-link to="/organization-page" class="link">组织架构</nuxt-link>
             </li>
           </ul>
           <div class="letterBox">
             <div class="letter">
-              <nuxt-link to="/message">
+              <nuxt-link to="/message-page">
                 <img :src="img15">
               </nuxt-link>
               <div>6</div>

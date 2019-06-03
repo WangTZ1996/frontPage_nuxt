@@ -50,11 +50,12 @@ export default {
   computed: {
     img1: () => img1,
     img2: () => img2,
-    img3: () => img3,
+    img3: () => img3
   },
+
   mounted() {
     swiper1.create()
-  },
+  }
 }
 </script>
 
