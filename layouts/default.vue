@@ -33,8 +33,8 @@
             <div class="listPad">
               <div class="settingList">
               <div class="itemPad">
-                <div class="listItem">流程设置</div>
-                <div class="listItem">用户设置</div>
+                <div class="listItem">{{option1}}</div>
+                <div class="listItem">{{option2}}</div>
               </div>
             </div>
             </div>
@@ -86,7 +86,13 @@ export default {
     imgLogo: () => imgLogo,
     setting: () => setting,
   },
-}
+  data () {
+    return {
+      option1: "选项1",
+      option2: "选项2",
+    }
+  }
+} 
 </script>
 
 <style scoped>
@@ -184,9 +190,10 @@ export default {
 
 .nav .title .list .settingBox:hover .settingList {
   position: absolute;
-  width: 160px;
+  width: 140px;
   height: 74px;
   padding-top: 22px;
+  margin-left: -58px;
 }
 
 .nav .title .list .settingBox .settingList .itemPad {
