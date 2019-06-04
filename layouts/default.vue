@@ -86,7 +86,7 @@ export default {
   },
   data () {
     return {
-      option1: "选项1选项1选项1选项1选项1",
+      option1: "选项1",
       option2: "选项2",
     }
   }
@@ -203,13 +203,14 @@ export default {
   color:#fff;
   background: #001529;
   line-height: 37px;
-  text-align: center;
   border-radius: 5px;
   overflow: hidden;
 }
 
 .nav .title .list .settingBox .settingList .itemPad .listItem{
   white-space: nowrap;
+  padding: 0 2em;
+  min-width: 100px;
 }
 
 .nav .title .list .settingBox .settingList .itemPad .listItem:hover {
