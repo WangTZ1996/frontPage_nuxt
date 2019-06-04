@@ -28,6 +28,17 @@
               <nuxt-link to="/organization-page" class="link">组织架构</nuxt-link>
             </li>
           </ul>
+          <div class="settingBox">
+            <img class="setting" :src="setting" >
+            <div class="listPad">
+              <div class="settingList">
+              <div class="itemPad">
+                <div class="listItem">流程设置</div>
+                <div class="listItem">用户设置</div>
+              </div>
+            </div>
+            </div>
+          </div>
           <div class="letterBox">
             <div class="letter">
               <nuxt-link to="/message-page">
@@ -65,12 +76,15 @@
 
 <script>
 import img15 from "../assets/image/15.png"
+// import login from ""
 import imgLogo from "../assets/image/logo.png"
+import setting from "../assets/image/gearWhite.png"
 
 export default {
   computed: {
     img15: () => img15,
     imgLogo: () => imgLogo,
+    setting: () => setting,
   },
 }
 </script>
@@ -120,7 +134,6 @@ export default {
 
 .nav .title .name span {
   font-size: 18px;
-  /* vertical-align: center; */
 }
 
 .nav .title .list {
@@ -159,6 +172,41 @@ export default {
   vertical-align: middle;
 }
 
+.nav .title .list .settingBox {
+  padding-right: 30px;
+}
+
+.nav .title .list .settingBox .setting {
+  z-index: 11;
+  width: 24px;
+  height: 24px;
+}
+
+.nav .title .list .settingBox:hover .settingList {
+  position: absolute;
+  width: 160px;
+  height: 74px;
+  padding-top: 22px;
+}
+
+.nav .title .list .settingBox .settingList .itemPad {
+  display: none;
+}
+
+.nav .title .list .settingBox:hover .settingList .itemPad{
+  display: inherit;
+  color:#fff;
+  background: #001529;
+  line-height: 37px;
+  text-align: center;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.nav .title .list .settingBox .settingList .itemPad .listItem:hover {
+  background: #477de9;
+}
+
 .nav .title .list .letter img {
   width: 26px;
   height: 20px;
@@ -175,6 +223,10 @@ export default {
   color: #fff;
   text-align: center;
   font-size: 10px;
+}
+
+.nav .title .list .login {
+  background: #fff;
 }
 
 .footer {
