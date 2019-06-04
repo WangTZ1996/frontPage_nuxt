@@ -30,13 +30,11 @@
           </ul>
           <div class="settingBox">
             <img class="setting" :src="setting" >
-            <div class="listPad">
               <div class="settingList">
               <div class="itemPad">
                 <div class="listItem">{{option1}}</div>
                 <div class="listItem">{{option2}}</div>
               </div>
-            </div>
             </div>
           </div>
           <div class="letterBox">
@@ -88,7 +86,7 @@ export default {
   },
   data () {
     return {
-      option1: "选项1",
+      option1: "选项1选项1选项1选项1选项1",
       option2: "选项2",
     }
   }
@@ -143,6 +141,7 @@ export default {
 }
 
 .nav .title .list {
+  position: relative;
   float: right;
   display: flex;
   align-items: center;
@@ -174,11 +173,11 @@ export default {
 }
 
 .nav .title .list .right .letter {
-  display: table-cell;
   vertical-align: middle;
 }
 
 .nav .title .list .settingBox {
+  position: relative;
   padding-right: 30px;
 }
 
@@ -190,10 +189,9 @@ export default {
 
 .nav .title .list .settingBox:hover .settingList {
   position: absolute;
-  width: 140px;
   height: 74px;
   padding-top: 22px;
-  margin-left: -58px;
+  right: 0;
 }
 
 .nav .title .list .settingBox .settingList .itemPad {
@@ -208,6 +206,10 @@ export default {
   text-align: center;
   border-radius: 5px;
   overflow: hidden;
+}
+
+.nav .title .list .settingBox .settingList .itemPad .listItem{
+  white-space: nowrap;
 }
 
 .nav .title .list .settingBox .settingList .itemPad .listItem:hover {
