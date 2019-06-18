@@ -32,8 +32,8 @@
             <img class="setting" :src="setting" >
               <div class="settingList">
               <div class="itemPad">
-                <div class="listItem">{{option1}}</div>
-                <div class="listItem">{{option2}}</div>
+                <div class="listItem"><a href="http://10.1.1.176:20024">流程IDE</a></div>
+                <div class="listItem"><a href="">用户</a></div>
               </div>
             </div>
           </div>
@@ -205,6 +205,10 @@ export default {
   line-height: 37px;
   border-radius: 5px;
   overflow: hidden;
+}
+
+.nav .title .list .settingBox:hover .settingList .itemPad a {
+  color: #fff;
 }
 
 .nav .title .list .settingBox .settingList .itemPad .listItem{
