@@ -32,7 +32,7 @@
             <img class="setting" :src="setting" >
               <div class="settingList">
               <div class="itemPad">
-                <div class="listItem"><a href="http://10.1.1.176:20024">流程IDE</a></div>
+                <a href="http://10.1.1.176:20024"><div class="listItem">流程IDE</div></a>
                 <div class="listItem"><a href="">用户</a></div>
               </div>
             </div>
@@ -228,7 +228,7 @@ export default {
 
 .nav .title .list .letter div {
   position: absolute;
-  top: 18px;
+  top: 8px;
   width: 15px;
   height: 15px;
   border-radius: 50%;
